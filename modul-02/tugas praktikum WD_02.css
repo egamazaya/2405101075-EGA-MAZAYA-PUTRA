@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav section"
+        "footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 20% 1fr;
+    gap: 5px;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, section, footer {
+    padding: 5px;
+}
+
+header {
+    background: #707070;
+    grid-area: header;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: #C9BFBF;
+    grid-area: nav;
+}
+
+section {
+    background: #ABABAB;
+    grid-area: section;
+}
+
+footer {
+    background: #707070;
+    grid-area: footer;
+    font-size: small;
+    text-align: center;
+}
